@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 * {
   margin: 0;
@@ -12,7 +12,7 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: flex;
@@ -38,9 +38,10 @@ body {
   box-shadow: 0px 0px 15px gray;
 }
 
-.Header, .Footer {
+.Header,
+.Footer {
   width: 100%;
-  background-color: #66d8f5;
+  background-color: #37474f;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -59,13 +60,12 @@ body {
 
 .Nav {
   width: 100%;
-  background-color: #333;
+  background-color: #37474f;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
-
 
 .Nav ul {
   color: #fff;
@@ -79,7 +79,7 @@ body {
   padding: 1rem;
 }
 
-.Nav li:hover, 
+.Nav li:hover,
 .Nav li:focus {
   padding: 1rem;
 }
@@ -89,20 +89,24 @@ body {
   text-decoration: none;
 }
 
-.Nav li:hover, 
-.Nav li:focus, 
-.Nav li:hover a, 
-.Nav li:focus a  {
+.Nav li:hover,
+.Nav li:focus,
+.Nav li:hover a,
+.Nav li:focus a {
   background-color: #eee;
   color: #333;
 }
 
-.Nav li:hover a, 
+.Nav li:hover a,
 .Nav li:focus a {
   cursor: pointer;
 }
 
-.Home, .NewTask, .TaskPage, .About, .Missing {
+.Home,
+.NewTask,
+.TaskPage,
+.About,
+.Missing {
   width: 100%;
   flex-grow: 1;
   padding: 1rem;
@@ -120,7 +124,7 @@ body {
   text-decoration: none;
 }
 
-.Home .task a, 
+.Home .task a,
 .Home .task a:visited {
   color: #000;
 }
@@ -151,9 +155,9 @@ body {
   margin-top: 1rem;
 }
 
-.newTaskForm input[type='text'], 
+.newTaskForm input[type="text"],
 .newTaskForm textarea {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   width: 100%;
   min-height: 48px;
   font-size: 1rem;
@@ -177,8 +181,10 @@ body {
   cursor: pointer;
 }
 
-.Missing h2, .TaskPage h2, 
-.Missing p, .TaskPage p {
+.Missing h2,
+.TaskPage h2,
+.Missing p,
+.TaskPage p {
   margin-bottom: 1rem;
 }
 
@@ -217,10 +223,10 @@ body {
     text-align: right;
   }
 
-  .Nav li:hover, 
-  .Nav li:focus, 
-  .Nav li:hover a, 
-  .Nav li:focus a  {
+  .Nav li:hover,
+  .Nav li:focus,
+  .Nav li:hover a,
+  .Nav li:focus a {
     background-color: #eee;
     color: #333;
   }
@@ -228,4 +234,40 @@ body {
   .newTaskForm textarea {
     height: 300px;
   }
+}
+
+.side-panel {
+  background-color: #f1f1f1;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 2rem;
+  bottom: 0;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side-panel h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.side-panel p {
+  margin-bottom: 10px;
+}
+
+.side-panel button {
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+}
+
+.side-panel button:hover {
+  background-color: #ff5555;;
 }
