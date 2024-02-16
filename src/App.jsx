@@ -69,7 +69,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header title="Marskettier" />
+      <Header title="Marsketeer" />
       <SidePanel tasks={tasks} handleDeleteAllTasks={handleDeleteAllTasks} />
       <Nav />
       <Switch>

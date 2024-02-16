@@ -23,10 +23,16 @@ const SidePanel = ({ tasks, handleDeleteAllTasks }) => {
   };
 
   return (
-    <div className="side-panel">
+    <div className="side-panel" data-cy="sidePanel">
       <h3>{getCurrentUse()}</h3>
       <p>Number of Tasks: {tasks.length}</p>
-      <button className="" onClick={handleDeleteAllTasks}>Delete All Tasks</button>
+      <button
+        className="allTasksDeleteButton"
+        onClick={handleDeleteAllTasks}
+        data-cy="allTasksDeleteButton"
+      >
+        Delete All Tasks
+      </button>
     </div>
   );
 };

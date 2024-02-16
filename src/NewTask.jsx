@@ -15,6 +15,7 @@ const NewTask = ({
       <form className="newTaskForm" onSubmit={handleSubmit}>
         <label htmlFor="taskTitle">Title:</label>
         <input
+          data-cy="taskTitle"
           id="taskTitle"
           type="text"
           required
@@ -23,6 +24,7 @@ const NewTask = ({
         />
         <label htmlFor="taskCreator">Created by:</label>
         <input
+          data-cy="taskCreator"
           id="taskCreator"
           type="text"
           required
@@ -31,6 +33,7 @@ const NewTask = ({
         />
         <label htmlFor="taskAssignee">Assigned to:</label>
         <input
+          data-cy="taskAssignee"
           id="taskAssignee"
           type="text"
           required
@@ -39,12 +42,13 @@ const NewTask = ({
         />
         <label htmlFor="taskBody">Task:</label>
         <textarea
+          data-cy="taskBody"
           id="taskBody"
           required
           value={taskBody}
           onChange={(e) => setTaskBody(e.target.value)}
         />
-        <button type="submit">Add Task</button>
+        <button type="submit" data-cy="submitButton">Add Task</button>
       </form>
     </main>
   );

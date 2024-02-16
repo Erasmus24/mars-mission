@@ -3,6 +3,10 @@ import React, { useState, useEffect } from "react";
 const Header = ({ title }) => {
   const [backgroundImage, setBackgroundImage] = useState("");
 
+  const headerStyle = {
+    textShadow: "2px 2px 2px #fff",
+  };
+
   useEffect(() => {
     const fetchImage = async () => {
       try {
@@ -21,8 +25,8 @@ const Header = ({ title }) => {
   }, []);
 
   return (
-    <header className="Header" style={{ backgroundImage }}>
-      <h1>{title}</h1>
+    <header className="Header" style={{ backgroundImage }} data-cy="asyncImage">
+      <h1 style={headerStyle}>{title}</h1>
     </header>
   );
 };

@@ -2,7 +2,7 @@ import Feed from "./Feed";
 
 const Home = ({ tasks }) => {
   return (
-    <main className="Home">
+    <main className="Home" data-cy="homePage">
       {tasks.length ? (
         <Feed tasks={tasks} />
       ) : (

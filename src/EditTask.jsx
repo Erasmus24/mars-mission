@@ -36,10 +36,11 @@ const EditTask = ({ tasks, handleEdit }) => {
 
   return (
     <main className="NewTask">
-      <h2>Edit Task</h2>
+      <h2 >Edit Task</h2>
       <form className="newTaskForm" onSubmit={handleSubmit}>
         <label>Title:</label>
         <input
+          data-cy="editTaskTitle"
           type="text"
           value={taskTitle}
           onChange={(e) => setTaskTitle(e.target.value)}
@@ -47,6 +48,7 @@ const EditTask = ({ tasks, handleEdit }) => {
         />
         <label htmlFor="taskCreator">Created by:</label>
         <input
+          data-cy="editTaskCreator"
           id="taskCreator"
           type="text"
           required
@@ -55,6 +57,7 @@ const EditTask = ({ tasks, handleEdit }) => {
         />
         <label htmlFor="taskAssignee">Assigned to:</label>
         <input
+          data-cy="editTaskAssignee"
           id="taskAssignee"
           type="text"
           required
@@ -63,12 +66,13 @@ const EditTask = ({ tasks, handleEdit }) => {
         />
         <label>Body:</label>
         <textarea
+          data-cy="editTaskBody"
           value={taskBody}
           onChange={(e) => setTaskBody(e.target.value)}
           required
         ></textarea>
         <br />
-        <button type="submit">Update Task</button>
+        <button type="submit" data-cy="editSubmitButton">Update Task</button>
       </form>
     </main>
   );
